@@ -29,13 +29,14 @@
 		.b-title{
 			margin-bottom:0;
 			padding:0 @indent__l (@indent__s + 5) ; display:inline-block; vertical-align:top; position:relative; min-width:310px; text-transform:uppercase !important;
-			.lib-css(border-bottom, 1px solid @block-title__text);
-			.lib-css(color, @block-title__text);
+			.lib-css(border-bottom, 1px solid @block-title_text_red);
+			.lib-css(color, @block-title_text_red);
 			.lib-css(font, @f_special);
 			strong{font-size:100%;}
 			&:before{
 				position:absolute; bottom:-11px; width:40px; height:20px; line-height:20px;
 				.lib-css(background, @main_background);
+				.lib-css(color, @block-title_text_green);
 				.abs-iconfont('\f219', 14px); 
 				left:40%; 
 				left: calc(~'50% - 20px');
@@ -51,8 +52,8 @@
 		.b-title{
 			margin-bottom:0;
 			padding:0  0 @indent__s; display:inline-block; vertical-align:top; position:relative; text-transform:uppercase !important;
-			.lib-css(border-bottom, 0px solid @block-title__text);
-			.lib-css(color, @block-title__text);
+			.lib-css(border-bottom, 0px solid @block-title_text_red);
+			.lib-css(color, @block-title_text_red);
 			.lib-css(font, @f_special);
 			strong{font-size:100%;}
 			&:before{
@@ -73,13 +74,13 @@
 			margin-bottom:2rem;
 			.block-collapsible-nav-title,
 			.block-title{
-				.abs-csscbf(@block-title__text, transparent, @block-title__font);
+				.abs-csscbf(@block-title_text_red, transparent, @block-title__font);
 				text-transform:uppercase;
 				position:relative;
 				padding:0;
 				margin-bottom:0;
 				min-width:100%;
-				.lib-css(border-bottom, 1px solid @block-title__text);
+				.lib-css(border-bottom, 1px solid @block-title_text_red);
 				.abs-borderradius(@block__radius @block__radius 0 0);
 				&:before{ display:none;}
 				strong{
@@ -90,7 +91,8 @@
 					margin-bottom:0;
 					display:inline-block;
 					vertical-align:top;
-					.lib-css(border-bottom, 3px solid @block-title__text);
+					border-bottom: 3px solid #F22D35;
+					.lib-css(border-bottom, 3px solid @block-title_text_red);
 				}
 			}
 			.block-content{
